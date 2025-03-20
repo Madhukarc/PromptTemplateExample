@@ -8,30 +8,6 @@ import os
 load_dotenv()
 
 # Create a prompt template
-# prompt_template = """You are a math expert. Solve the quadratic equation: x² - 5x + 6 = 0 using three different methods.
-# Follow a self-consistency approach by checking if the results match across methods.
-
-# ### Method 1: Quadratic Formula
-# Step 1: Recall the quadratic formula: x = (-b ± √(b² - 4ac)) / (2a)
-# Step 2: Identify a, b, and c values.
-# Step 3: Compute the discriminant and solve for x.
-
-# ### Method 2: Factorization
-# Step 1: Rewrite the quadratic equation in factored form.
-# Step 2: Solve for x by setting each factor equal to zero.
-
-# ### Method 3: Numerical Approximation
-# Step 1: Use a numerical method (e.g., trial values, Newton-Raphson, or a solver).
-# Step 2: Compare the computed values with previous solutions.
-
-# ### Consistency Check:
-# - Compare the answers obtained from all three methods.
-# - If they match, confirm the result.
-# - If they differ, analyze and resolve discrepancies.
-
-# Now, execute each step and return a structured output.
-# """
-
 prompt_template = """You are an AI assistant that uses self-reflection to refine a short story. Follow these steps:
 1. Generate a short fictional story (3-5 sentences) based on the prompt {text}.
 2. Reflect on whether the story is logically coherent, engaging, and clear.
